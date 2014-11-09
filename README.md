@@ -18,15 +18,13 @@ Group-6
        
 <b>1.3. Glossary</b><br><br>
 
-* e-Wallet:<br>
+* e-Wallet<br>
 <p>
 The software component that handles the payment and associated data and provides the user( in our case, a student) with options to make payments, recharge and avail loyalty benefits provided by the vendors.</p>
-
-* Student <br>
+* Student<br>
 <p>
 Refers to the students at Bits Goa. More specifically, any person with access to the outlets at Bits Goa who has an SWD account maintained at the campus and is identified by a unique ID number provided by the campus.
 </p>
-
 * Database<br>
 <p>
 Collection of all the information, i.e., payment logs, credit balances and dues, account balances and registered student information is monitored by this system.
@@ -38,7 +36,6 @@ A system which facilitates the secure payment process by interacting with the st
 * Loyalty benefit<br><p>
 Special offers made by outlets on campus to students who make purchases from their outlets using the e-Wallet system.
 </p>
-
 * Logs<br><p> 
 Refers to data that indicates the proceedings of various transactions between the student and the vendor. In a way, they behave as a sort of proof of payment.</p>
 * Account<br><p>
@@ -68,11 +65,11 @@ These files are also shared on the ‘Project’ Group. <br><br>
 The relevant files containing UML Diagrams relevant to our project are as follows:</p><br>
 <b>Class Diagram:</b> Uml_1_0.zargo<br>
 <b>State Diagrams:</b><br>
-Database:  Database Stae Diagram.zargo ;<br>
-Payment Tracker: PaymentTracker State Diagram; <br>
-Controller: controller.zargo<br>
-Collaboration Diagram: collab.zargo<br>
-Sequence Diagram: sequenceDiag.vpp<br>
+**Database: ** Database Stae Diagram.zargo ;<br>
+**Payment Tracker:** PaymentTracker State Diagram; <br>
+**Controller: **controller.zargo<br>
+<b>Collaboration Diagram:</b> collab.zargo<br>
+<b>Sequence Diagram:</b> sequenceDiag.vpp<br>
 
 
 The Junit test classes can be found in the following folder: testcodes<br>
