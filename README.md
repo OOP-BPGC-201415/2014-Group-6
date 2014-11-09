@@ -14,7 +14,29 @@ E – Wallet Project
        Currently, the system is designed for usage only by students of Bits Goa. Further additions could be made to the system to make this facility available to any on-campus resident, say, staff members, wardens, hostel assistants, etc.
        
 1.3. Glossary
-TermDefinitione-WalletThe software component that handles the payment and associated data and provides the user( in our case, a student) with options to make payments, recharge and avail loyalty benefits provided by the vendors.Student Refers to the students at Bits Goa. More specifically, any person with access to the outlets at Bits Goa who has an SWD account maintained at the campus and is identified by a unique ID number provided by the campus.DatabaseCollection of all the information, i.e., payment logs, credit balances and dues, account balances and registered student information is monitored by this system.VendorPerson/outlet on campus who(which) receives the payment from the students when a purchase is made by them. Payment trackerA system which facilitates the secure payment process by interacting with the student and the database and the vendor.Loyalty benefitSpecial offers made by outlets on campus to students who make purchases from their outlets using the e-Wallet system.Logs Refers to data that indicates the proceedings of various transactions between the student and the vendor. In a way, they behave as a sort of proof of payment.AccountRefers to the unique account maintained for each registered student which comprises a security pin, balance amounts, unique name and id.RechargeRecharge here, is used to refer to the transfer/translation of money from the student’s swd-account to e-Wallet cash, which the student can use at the various on-campus outlets. UserThe term user has been used along with the term Student in this document. In all cases both terms refer to a student as described above. 
+Term
+Definition
+e-Wallet
+The software component that handles the payment and associated data and provides the user( in our case, a student) with options to make payments, recharge and avail loyalty benefits provided by the vendors.
+Student 
+Refers to the students at Bits Goa. More specifically, any person with access to the outlets at Bits Goa who has an SWD account maintained at the campus and is identified by a unique ID number provided by the campus.
+Database
+Collection of all the information, i.e., payment logs, credit balances and dues, account balances and registered student information is monitored by this system.
+Vendor
+Person/outlet on campus who(which) receives the payment from the students when a purchase is made by them. 
+Payment tracker
+A system which facilitates the secure payment process by interacting with the student and the database and the vendor.
+Loyalty benefit
+Special offers made by outlets on campus to students who make purchases from their outlets using the e-Wallet system.
+Logs 
+Refers to data that indicates the proceedings of various transactions between the student and the vendor. In a way, they behave as a sort of proof of payment.
+Account
+Refers to the unique account maintained for each registered student which comprises a security pin, balance amounts, unique name and id.
+Recharge
+Recharge here, is used to refer to the transfer/translation of money from the student’s swd-account to e-Wallet cash, which the student can use at the various on-campus outlets. 
+User
+The term user has been used along with the term Student in this document. In all cases both terms refer to a student as described above.
+ 
  
  
  
@@ -38,7 +60,7 @@ State Diagrams:
 > Payment Tracker: PaymentTracker State Diagram; 
 > Controller: controller.zargo
 Collaboration Diagram: collab.zargo
-Activity Diagram: 
-Sequence Diagram:
+Sequence Diagram: sequenceDiag.vpp
 
-The Junit test classes can be found in the following file: 
+
+The Junit test classes can be found in the following folder: testcodes
