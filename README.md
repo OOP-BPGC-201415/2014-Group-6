@@ -18,10 +18,11 @@ Group-6
        
 <b>1.3. Glossary</b><br><br>
 
-* e-Wallet<br>
+e-Wallet<br>
 <p>
 The software component that handles the payment and associated data and provides the user( in our case, a student) with options to make payments, recharge and avail loyalty benefits provided by the vendors.</p>
-* Student<br>
+
+Student<br>
 <p>
 Refers to the students at Bits Goa. More specifically, any person with access to the outlets at Bits Goa who has an SWD account maintained at the campus and is identified by a unique ID number provided by the campus.
 </p>
@@ -65,9 +66,9 @@ These files are also shared on the ‘Project’ Group. <br><br>
 The relevant files containing UML Diagrams relevant to our project are as follows:</p><br>
 <b>Class Diagram:</b> Uml_1_0.zargo<br>
 <b>State Diagrams:</b><br>
-**Database: ** Database Stae Diagram.zargo ;<br>
-**Payment Tracker:** PaymentTracker State Diagram; <br>
-**Controller: **controller.zargo<br>
+<b>Database: </b> Database Stae Diagram.zargo ;<br>
+<b>Payment Tracker: </b> PaymentTracker State Diagram; <br>
+<b>Controller: </b>controller.zargo<br>
 <b>Collaboration Diagram:</b> collab.zargo<br>
 <b>Sequence Diagram:</b> sequenceDiag.vpp<br>
 
