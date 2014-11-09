@@ -16,44 +16,45 @@ Group-6
        Currently, the system is designed for usage only by students of Bits Goa. Further additions could be made to the system to make this facility available to any on-campus resident, say, staff members, wardens, hostel assistants, etc.
        </p>
        
-<b>1.3. Glossary</b>
+<b>1.3. Glossary</b><br><br>
 
-*e-Wallet:<br>
+* e-Wallet:<br>
 <p>
 The software component that handles the payment and associated data and provides the user( in our case, a student) with options to make payments, recharge and avail loyalty benefits provided by the vendors.</p>
-*Student <br>
+
+* Student <br>
 <p>
 Refers to the students at Bits Goa. More specifically, any person with access to the outlets at Bits Goa who has an SWD account maintained at the campus and is identified by a unique ID number provided by the campus.
 </p>
-*Database<br>
+
+* Database<br>
 <p>
 Collection of all the information, i.e., payment logs, credit balances and dues, account balances and registered student information is monitored by this system.
 </p>
-*Vendor<br><p></p>
+* Vendor<br><p></p>
 Person/outlet on campus who(which) receives the payment from the students when a purchase is made by them. </p>
-*Payment tracker<br><p>
+* Payment tracker<br><p>
 A system which facilitates the secure payment process by interacting with the student and the database and the vendor.</p>
-*Loyalty benefit<br><p>
+* Loyalty benefit<br><p>
 Special offers made by outlets on campus to students who make purchases from their outlets using the e-Wallet system.
 </p>
 
-*Logs<br><p> 
+* Logs<br><p> 
 Refers to data that indicates the proceedings of various transactions between the student and the vendor. In a way, they behave as a sort of proof of payment.</p>
-*Account<br><p>
+* Account<br><p>
 Refers to the unique account maintained for each registered student which comprises a security pin, balance amounts, unique name and id.
 </p>
-*Recharge
+* Recharge
 <br><p>Recharge here, is used to refer to the transfer/translation of money from the student’s swd-account to e-Wallet cash, which the student can use at the various on-campus outlets. 
 </p>
-*User<br><p>
+* User<br><p>
 The term user has been used along with the term Student in this document. In all cases both terms refer to a student as described above.
  </p>
  
  
- 
 <b> 1.4. Use case Diagram, Project Requirements and CRC Cards :</b><br>
 The Use case diagram, Project Requirements document and CRC cards can be on the master branch of OOP-BPGC-201415/Group-6 repository. 
-The relevant file names are:
+The relevant file names are:<br>
 UseCase_1_0.zargo 
 
 Proj_Req_3_0.pdf
@@ -61,17 +62,17 @@ Proj_Req_3_0.pdf
 Proj_Req_3_0.docx
 
 CRC_Cards_3_0.vpp
-These files are also shared on the ‘Project’ Group. 
+These files are also shared on the ‘Project’ Group. <br><br>
 
  <b>1.5. UML Diagrams and JUnit tests:</b><br><p>
-The relevant files containing UML Diagrams relevant to our project are as follows:</p>
-Class Diagram: Uml_1_0.zargo
-State Diagrams:
-> Database:  Database Stae Diagram.zargo ;
-> Payment Tracker: PaymentTracker State Diagram; 
-> Controller: controller.zargo
-Collaboration Diagram: collab.zargo
-Sequence Diagram: sequenceDiag.vpp
+The relevant files containing UML Diagrams relevant to our project are as follows:</p><br>
+<b>Class Diagram:</b> Uml_1_0.zargo<br>
+<b>State Diagrams:</b><br>
+Database:  Database Stae Diagram.zargo ;<br>
+Payment Tracker: PaymentTracker State Diagram; <br>
+Controller: controller.zargo<br>
+Collaboration Diagram: collab.zargo<br>
+Sequence Diagram: sequenceDiag.vpp<br>
 
 
-The Junit test classes can be found in the following folder: testcodes
+The Junit test classes can be found in the following folder: testcodes<br>
