@@ -1,3 +1,5 @@
+**Bits Goa E-Wallet(beta)**
+
 The e-Wallet folder contains a beta version of our e-Wallet software.
 Currently, the basic functionality has been implemented, i.e., receiving payments and recharging the e-Wallet account. The View Logs functionality will be implemented in the final version alongwith the added features like, loyalty benefits for using the e-Wallet payment.
 
