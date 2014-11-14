@@ -1,9 +1,9 @@
-**Bits Goa E-Wallet(beta)**
+<b><h1>Bits Goa E-Wallet(beta)</h1></b>
 
 The e-Wallet folder contains a beta version of our e-Wallet software.
 Currently, the basic functionality has been implemented, i.e., receiving payments and recharging the e-Wallet account. The View Logs functionality will be implemented in the final version alongwith the added features like, loyalty benefits for using the e-Wallet payment.
 
-Spring framework has been used for jdbc. Spring framework needs commons logging and mysql connector.
+<u>Spring framework</u> has been used for jdbc. Spring framework needs commons logging and mysql connector.
 
 The following classes have been used in the design:
 
@@ -28,7 +28,7 @@ The Vendor table contains nine columns viz. id(primary+auto_increment), name(var
 
 (The security features will be implemented in the final version, i.e., password and pin hashing.)
 
-Usage:
+<h2>Usage:</h2>
 	The payments are done using the Receive Payment option available to the Vendor. During each payment the student is required to enter his ID and PIN to complete the transaction. In case of insufficient balance the student is given the option to recharge in between the payment process which requires the student to also enter their E-Wallet password. 
 	Recharge facility is available to the student under the Student menu as well. Credit facility is available in case of insufficient Virtual Balance in the account. PIN is required for Recharging the E-Wallet.
 	Check Balance facility is available for both the Student and the Vendor.
