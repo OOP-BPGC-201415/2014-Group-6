@@ -887,15 +887,25 @@ public class Controller extends javax.swing.JFrame {
     }//GEN-LAST:event_loyaltyButtonActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        int action = JOptionPane.showConfirmDialog(null, pwd,"Enter Password",JOptionPane.OK_CANCEL_OPTION);
-                                                if (action == JOptionPane.OK_OPTION) {
-                                                password = new String(pwd.getPassword());
-                                                }
-                                                if(password.equals("group6")){
-                                                  adminFrame.pack();
-                                                  adminFrame.setVisible(true);
-                                                  adminFrame.setLocationRelativeTo(null);
-                                                }
+        try{
+            int action = JOptionPane.showConfirmDialog(null, pwd,"Enter Password",JOptionPane.OK_CANCEL_OPTION);
+            if (action == JOptionPane.OK_OPTION) {
+            password = new String(pwd.getPassword());
+            valid = true;
+            }
+        }
+        catch(NullPointerException e){
+                                                   
+        }
+        if(valid){
+            if(password.equals("group6")){
+            adminFrame.pack();
+            adminFrame.setVisible(true);
+            adminFrame.setLocationRelativeTo(null);
+            }
+            else
+                JOptionPane.showMessageDialog(null, "Wrong Password","Error",JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void createStudentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createStudentActionPerformed
@@ -903,22 +913,7 @@ public class Controller extends javax.swing.JFrame {
         this.setVisible(false);
         createStudentFrame.setVisible(true);
         createStudentFrame.setLocationRelativeTo(null);
-        name = nameField.getText();
-        bits_id = bits_idField.getText();
-        bits_id = bits_id.toLowerCase();
-        password = toHash(passfield.getText());
-        try {
-                pin = Integer.parseInt(pinField.getText());
-                valid = true;
-                
-        }catch (NumberFormatException e) {
-                //error
-                valid=false;
-        }
-        if(valid)
-            JOptionPane.showMessageDialog(null,Controller.db.create(name, bits_id, password, pin));
-        else
-            JOptionPane.showMessageDialog(null,"Incorrect PIN format", "Try Again",JOptionPane.WARNING_MESSAGE);
+        
     }//GEN-LAST:event_createStudentActionPerformed
 
     private void createVendorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createVendorActionPerformed
@@ -926,11 +921,7 @@ public class Controller extends javax.swing.JFrame {
         this.setVisible(false);
         createVendorFrame.setVisible(true);
         createVendorFrame.setLocationRelativeTo(null);
-        name = nameField.getText();
-        uname = unameField.getText();
-        uname = uname.toLowerCase();
-        password = toHash(passfield.getText());
-        JOptionPane.showMessageDialog(null,Controller.db.create(name, bits_id, password));
+        
     }//GEN-LAST:event_createVendorActionPerformed
 
     private void deleteStudentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteStudentActionPerformed
@@ -950,16 +941,24 @@ public class Controller extends javax.swing.JFrame {
     }//GEN-LAST:event_exitButton2ActionPerformed
 
     private void createVendorButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createVendorButtonActionPerformed
-        name = nameField.getText();
-        uname = unameField.getText();
+        nameField1.setText("");
+        idField1.setText("");
+        passfield1.setText("");
+        name = nameField1.getText();
+        uname = idField1.getText();
         uname = uname.toLowerCase();
-        password = toHash(passfield.getText());
-        JOptionPane.showMessageDialog(null,Controller.db.create(name, bits_id, password));
+        password = toHash(passfield1.getText());
+        JOptionPane.showMessageDialog(null,Controller.db.create(name, uname, password));
+        createVendorFrame.setVisible(false);
     }//GEN-LAST:event_createVendorButtonActionPerformed
 
     private void createStudentButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createStudentButtonActionPerformed
+        nameField.setText("");
+        idField.setText("");
+        passfield.setText("");
+        pinField.setText("");
         name = nameField.getText();
-        bits_id = bits_idField.getText();
+        bits_id = idField.getText();
         bits_id = bits_id.toLowerCase();
         password = toHash(passfield.getText());
         try {
@@ -974,6 +973,8 @@ public class Controller extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null,Controller.db.create(name, bits_id, password, pin));
         else
             JOptionPane.showMessageDialog(null,"Incorrect PIN format", "Try Again",JOptionPane.WARNING_MESSAGE);
+        
+        createStudentFrame.setVisible(false);
     }//GEN-LAST:event_createStudentButtonActionPerformed
 
     /**

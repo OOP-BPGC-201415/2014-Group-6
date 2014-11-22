@@ -3,24 +3,22 @@ package e_wallet;
 import java.sql.*;
 
 public class TableSetup {
- // JDBC driver name and database URL
- static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
- static final String DB_URL = "jdbc:mysql://localhost/e_wallet";
+ // JDBC driver name and database URL 
+
 
  //  Database credentials
- static final String USER = "username";
- static final String PASS = "password";
+ 
  
  public static void main(String[] args) {
  Connection conn = null;
  Statement stmt = null;
  try{
     //STEP 2: Register JDBC driver
-    Class.forName("com.mysql.jdbc.Driver");
+    Class.forName(CreateDatabase.JDBC_DRIVER);
 
     //STEP 3: Open a connection
     System.out.println("Connecting to the e_wallet database...");
-    conn = DriverManager.getConnection(DB_URL,"root",""); //, USER, PASS);
+    conn = DriverManager.getConnection(CreateDatabase.DB_URL,"root",""); //, CreateDatabase.USER, CreateDatabase.PASS);
     System.out.println("Connected database successfully...");
     
     //STEP 4: Execute a query

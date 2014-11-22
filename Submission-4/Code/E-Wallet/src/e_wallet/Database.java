@@ -63,7 +63,6 @@ public class Database {
      * @param id
      * @param to
      * @param end
-     * @param balance
      * @param completion
      */
     public void updateLog(int id, String to, Date end, int completion){
@@ -147,7 +146,7 @@ public class Database {
                 }catch(EmptyResultDataAccessException e){
 	    	 
                 }
-                 return student; 
+                return student; 
 	     
 	}
 	 
@@ -198,7 +197,7 @@ public class Database {
 	public String updateBalance(String uname, double ewbalance){
 	      SQL = "update Vendor set ewbalance = ? where uname = ?";
 	      jdbcTemplateObject.update(SQL, ewbalance, uname);
-	      return ("Transferred amount to " + uname);
+	      return ("Transferred amount. Check Balance ");
 	}
 	  
 	  //For the Student
@@ -227,7 +226,7 @@ public class Database {
      * @param credit_avail
      * @return
      */
-                public String updateBalance(String bits_id, double ewbalance, double swdbalance, double credit_avail){
+        public String updateBalance(String bits_id, double ewbalance, double swdbalance, double credit_avail){
 	      SQL = "update Student set ewbalance = ?, swdbalance = ?, credit_avail = ? where bits_id = ?";
 	      jdbcTemplateObject.update(SQL, ewbalance, swdbalance, credit_avail, bits_id);
 	      return ("The new E-Wallet Balance for "+bits_id+" is Rs."+ewbalance+"\nReturning back to the main menu.\n");
