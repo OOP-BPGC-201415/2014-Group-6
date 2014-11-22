@@ -1,0 +1,12 @@
+The UI is self-explanatory and the following inputs can be used to 
+test the e-wallet system. 
+
+Give the relevant inputs as prompted by the UI dialog boxes.
+
+	Test Entry for Student = Name : Shreyash
+				 BITS ID : 1111
+				 Password : abcd
+				 PIN : 1234
+	Test Entry for Vendor = Name : Borkar's Super Market
+				BITS ID : bk123
+				Password : abcd
