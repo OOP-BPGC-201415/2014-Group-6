@@ -43,10 +43,9 @@ Topic			Number in Stage-2 Submission 			  Code
 								Complete 	Incomplete
 ----------------------------------------------------------------------------------------------------------
 Use cases		11					11		-
-Classes			
-Packages
-Sequence diagrams
-Unit Tests
+Classes			8					8		-	
+Sequence diagrams	1					1		-	
+Unit Tests		4					4		-
 ----------------------------------------------------------------------------------------------------------
 
 
